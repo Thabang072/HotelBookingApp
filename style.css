@@ -9,11 +9,13 @@ body{
 
 }
 .form-container{
-    background-color:   rgb(86, 81, 223);
-    padding: 20px;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+    background-color: 5px solid transparent  ;
+    padding: 20px; 
     border-radius: 10px;
-    box-shadow: 0 0 10px rgb(251, 250, 250);
-
+    box-shadow: 0 0 10px rgb(222, 223, 223);
+    border: 2px solid transparent;
 }
 
 .form-container h2 {
@@ -30,6 +32,7 @@ body{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+
 }
 
 .login-form button {
@@ -49,7 +52,7 @@ body{
     font-size: small;
 }
  body{
-    background-image:url(https://img.freepik.com/free-vector/realistic-neon-lights-background_23-2148907367.jpg?w=900&t=st=1715630718~exp=1715631318~hmac=ce99854bd31c6e6afe558eb4efebcd0616376c25d99fb5178680f0e0fac18a6f) ;
+    background-image:url(https://photos.mandarinoriental.com/is/image/MandarinOriental/dubai-suite-skyline-view-bedroom) ;
 
     background-size: cover;
 }
