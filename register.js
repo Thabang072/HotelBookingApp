@@ -52,7 +52,11 @@ const newUser = {
      password: password
 
 
-}:
+};
+
+// Add user to users array
+user.push(newUser);
+
 
 
 })
