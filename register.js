@@ -13,13 +13,21 @@ registerForm.addEventListener("submit", function (event) {
     const confirmPassword = document.getElementById("confirmPassword").ariaValueMax;
 
 
-// condition for password 
+// condition for password  if is correct
 if (password !== confirmPassword) {
 
 registerMessage.textContent = "passwords do not match.";
 registerMessage.className = "form-message error";
 return;
 
+}
+// password lenth conditions
+
+if (password.length < 6 ) {
+    registerMessage.textContent = "Password must be atleast 6 characters long.";
+
+    registerMessage.className = "form-message error";
+    return;
 }
 
 
