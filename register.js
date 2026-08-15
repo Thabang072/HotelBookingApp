@@ -30,6 +30,9 @@ if (password.length < 6 ) {
     return;
 }
 
+// get existing user users from local storage
+const user = JSON.parse(localStorage.getItem("hotelUsers")) || [];
+
 
 
 })
