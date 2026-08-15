@@ -36,7 +36,23 @@ const user = JSON.parse(localStorage.getItem("hotelUsers")) || [];
 if (existingUser) {
     registerMessage.textContent =
     "An account with this mobile number already exists.";
+
+    registerMessage.className = "form-message error";
+    return;
 }
+
+// create new user if not registerd
+const newUser = {
+
+     id: date.now(),
+     name: name,
+     surname: surname,
+     number: number,
+     dateOfBirth: dateOfBirth,
+     password: password
+
+
+}:
 
 
 })
