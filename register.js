@@ -57,6 +57,8 @@ const newUser = {
 // Add user to users array
 user.push(newUser);
 
+// save users to localstorage
+localStorage.setItem("hotelUsers", JSON.stringify(users));
 
 
 })
