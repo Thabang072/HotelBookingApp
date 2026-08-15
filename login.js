@@ -11,7 +11,22 @@ event.preventDefault();
      const users = JSON.parse(localStorage.getItem("hotelUsers")) || [];
     
      // Find existing users 
-     
+     const user = users.find(
+        user =>
+            user.number ===number && 
+        user.password === password
+     );
+
+     if (!user) {
+        logIMessage.textContent =
+        "Incorrect mobile number or password.";
+
+        loginMessage.className = "form-message error";
+
+        return
+     };
+
+     // save logdin user details into local storage
     
     
     
