@@ -33,6 +33,10 @@ if (password.length < 6 ) {
 // get existing user users from local storage
 const user = JSON.parse(localStorage.getItem("hotelUsers")) || [];
 
+if (existingUser) {
+    registerMessage.textContent =
+    "An account with this mobile number already exists.";
+}
 
 
 })
