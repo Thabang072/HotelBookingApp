@@ -38,6 +38,8 @@ event.preventDefault();
      logIMessage.className = "form-message success";
 
     // redirect to home page if user 
-
+    setTimeout(() => {
+        window.location.href = "home.html";
+    }, 1000);
     
     });
