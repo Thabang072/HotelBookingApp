@@ -27,7 +27,17 @@ event.preventDefault();
      };
 
      // save logdin user details into local storage
+     localStorage.setItem(
+        "loggedInUser"
+        JSON.stringify(user)
+     );
     
-    
+     logIMessage.textContent = 
+     `Welcome back, ${user.name}!`;
+     
+     logIMessage.className = "form-message success";
+
+    // redirect to home page if user 
+
     
     });
