@@ -60,5 +60,12 @@ user.push(newUser);
 // save users to localstorage
 localStorage.setItem("hotelUsers", JSON.stringify(users));
 
+registerMessage.textContent = 
+"Registration successfull Redirecting to login...";
 
-})
+// Redirect to login page
+setTimeout(() => {
+    window.location.href = "index.html";
+
+}, 1500);
+});
