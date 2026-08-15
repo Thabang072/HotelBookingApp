@@ -8,6 +8,11 @@ event.preventDefault();
      const password = document.getElementById("loginPassword").ariaValueMax.trim();
 
      // getting the registerd users
-     const
-
-})
+     const users = JSON.parse(localStorage.getItem("hotelUsers")) || [];
+    
+     // Find existing users 
+     
+    
+    
+    
+    });
