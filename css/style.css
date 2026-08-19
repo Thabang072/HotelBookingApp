@@ -1,0 +1,1027 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f5f7fa;
+
+    color: #222;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    min-height: 70px;
+
+    padding: 15px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: white;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.logo {
+    text-decoration: none;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #0077b6;
+}
+
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    list-style: none;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #0077b6;
+}
+
+
+.nav-button {
+    background: #0077b6;
+
+    color: white !important;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+}
+
+
+.nav-button:hover {
+    background: #005f8f;
+}
+
+
+.user-nav {
+    color: #0077b6;
+
+    font-weight: bold;
+}
+
+
+.logout-button {
+    border: none;
+
+    background: #dc3545;
+
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.logout-button:hover {
+    background: #b02a37;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.hero-content {
+    max-width: 750px;
+
+    padding: 30px;
+}
+
+
+.hero h1 {
+    font-size: 55px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.primary-button {
+    display: inline-block;
+
+    border: none;
+
+    background: #0077b6;
+
+    color: white;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.primary-button:hover {
+    background: #005f8f;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-section {
+    max-width: 1000px;
+
+    margin: -50px auto 50px;
+
+    position: relative;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.search-section h2 {
+    margin-bottom: 20px;
+}
+
+
+.search-form {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.search-form input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+
+.search-form button {
+    padding: 14px 25px;
+
+    border: none;
+
+    background: #0077b6;
+
+    color: white;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.featured-section {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 40px 20px 80px;
+}
+
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+
+.section-heading a {
+    color: #0077b6;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+    text-align: center;
+
+    padding: 80px 20px 40px;
+
+    background: #eaf6fb;
+}
+
+
+.page-header h1 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   HOTEL SEARCH
+========================= */
+
+.hotel-search {
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.hotel-search input,
+.hotel-search select {
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background: white;
+}
+
+
+.hotel-search input {
+    flex: 1;
+}
+
+
+/* =========================
+   HOTEL GRID
+========================= */
+
+.hotel-grid {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+
+    gap: 25px;
+}
+
+
+/* =========================
+   HOTEL CARD
+========================= */
+
+.hotel-card {
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.hotel-card img {
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+}
+
+
+.hotel-card-content {
+    padding: 20px;
+}
+
+
+.hotel-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 22px;
+}
+
+
+.hotel-location {
+    color: #666;
+
+    margin-bottom: 10px;
+}
+
+
+.hotel-rating {
+    color: #f39c12;
+
+    margin-bottom: 15px;
+}
+
+
+.hotel-price {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.hotel-price small {
+    font-size: 13px;
+
+    font-weight: normal;
+
+    color: #666;
+}
+
+
+.hotel-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.favorite-button {
+    width: 46px;
+
+    height: 46px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    background: white;
+
+    font-size: 23px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.favorite-button:hover,
+.favorite-button.active {
+    background: #ffe8e8;
+
+    border-color: #ffb3b3;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.details-container {
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.details-container > img {
+    width: 100%;
+
+    max-height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+.details-content {
+    padding: 30px 0;
+}
+
+
+.details-content h1 {
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+
+.details-content h2 {
+    margin-top: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+.amenities {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+
+.amenity {
+    padding: 8px 12px;
+
+    background: #eaf6fb;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   AUTH
+========================= */
+
+.auth-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("https://images.unsplash.com/photo-1564501049412-61c2a3083791");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.auth-container {
+    width: 420px;
+
+    max-width: 100%;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.auth-container h1 {
+    margin-bottom: 10px;
+}
+
+
+.auth-container > p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+.auth-container form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.auth-container input {
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+.auth-container input:focus {
+    outline: none;
+
+    border-color: #0077b6;
+}
+
+
+.checkbox-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 10px 0;
+}
+
+
+.checkbox-label input {
+    width: auto;
+}
+
+
+.auth-link {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+.auth-link a {
+    color: #0077b6;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   FORM MESSAGES
+========================= */
+
+.form-message {
+    text-align: center;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+.form-message.error {
+    color: #dc3545;
+}
+
+
+.form-message.success {
+    color: #198754;
+}
+
+
+/* =========================
+   BOOKING
+========================= */
+
+.booking-section {
+    max-width: 800px;
+
+    margin: 50px auto;
+
+    padding: 20px;
+}
+
+
+.booking-section > h1 {
+    margin-bottom: 30px;
+}
+
+
+.booking-hotel-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    margin-bottom: 25px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.booking-hotel-card img {
+    width: 180px;
+
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+.booking-form {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.booking-form input,
+.booking-form select {
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+.booking-form input:focus,
+.booking-form select:focus {
+    outline: none;
+
+    border-color: #0077b6;
+}
+
+
+.price-summary {
+    margin: 20px 0;
+
+    padding: 20px;
+
+    background: #eaf6fb;
+
+    border-radius: 6px;
+}
+
+
+.price-summary p {
+    margin-bottom: 8px;
+}
+
+
+.price-summary h2 {
+    margin-top: 15px;
+
+    color: #0077b6;
+}
+
+
+#totalPrice {
+    color: #0077b6;
+}
+
+
+/* =========================
+   BOOKINGS
+========================= */
+
+.bookings-section {
+    padding: 30px 20px;
+}
+
+
+.booking-card {
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.booking-card h2 {
+    margin-bottom: 5px;
+}
+
+
+.booking-details {
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #eee;
+}
+
+
+.booking-details p {
+    margin: 8px 0;
+
+    color: #555;
+}
+
+
+.status-confirmed {
+    color: #198754;
+
+    font-weight: bold;
+}
+
+
+.cancel-button {
+    margin-top: 20px;
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #dc3545;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.cancel-button:hover {
+    background: #b02a37;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-state {
+    max-width: 700px;
+
+    margin: 40px auto;
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.empty-state h3,
+.empty-state h2 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    margin-top: 60px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: #1d3557;
+
+    color: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+
+    .hero {
+        min-height: 500px;
+    }
+
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    .search-section {
+        margin: -30px 20px 30px;
+    }
+
+
+    .search-form {
+        flex-direction: column;
+    }
+
+
+    .hotel-search {
+        flex-direction: column;
+    }
+
+
+    .booking-hotel-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .booking-hotel-card img {
+        width: 100%;
+
+        height: 200px;
+    }
+
+
+    .details-content h1 {
+        font-size: 28px;
+    }
+
+}

@@ -1,31 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stzles.css ">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>StayEase | Hotel Booking</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body class="login-page">
-    <div>
-    <img src=""alt="">
-</div>
-    <div class="form-container">
-        
-        <h2>Login</h2>
-        <form class="login-form" action="your_login_endpoint" method="POST">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-            <label for="">
-                <input type="checkbox">remember me
-            </label>
-          <p class="register-text">  
-            Dont have an account? <a  href="Register.html" class="Register">Register</a>
-        </p>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        StayEase
+    </a>
+
+    <nav>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="hotels.html">Hotels</a>
+            </li>
+
+            <li>
+                <a href="favorites.html">
+                    Favorites ❤️
+                </a>
+            </li>
+
+            <li>
+                <a href="my-bookings.html">
+                    My Bookings
+                </a>
+            </li>
+
+            <li id="loginNav">
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+
+            <li id="registerNav">
+                <a
+                    href="register.html"
+                    class="nav-button"
+                >
+                    Register
+                </a>
+            </li>
+
+            <li
+                id="userNav"
+                class="user-nav"
+            ></li>
+
+            <li id="logoutNav"></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Find Your Perfect Stay
+            </h1>
+
+            <p>
+                Discover beautiful hotels and book
+                your next unforgettable stay.
+            </p>
+
+            <a
+                href="hotels.html"
+                class="primary-button"
+            >
+                Explore Hotels
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="search-section">
+
+        <h2>
+            Find a Hotel
+        </h2>
+
+        <form
+            id="homeSearchForm"
+            class="search-form"
+        >
+
+            <input
+                type="text"
+                id="homeSearch"
+                placeholder="Search hotel or location..."
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
         </form>
-    </div>
-    
+
+    </section>
+
+
+    <section class="featured-section">
+
+        <div class="section-heading">
+
+            <h2>
+                Featured Hotels
+            </h2>
+
+            <a href="hotels.html">
+                View All
+            </a>
+
+        </div>
+
+
+        <div
+            id="featuredHotels"
+            class="hotel-grid"
+        ></div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <p>
+        &copy; 2026 StayEase.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/hotels.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/app.js"></script>
+
 </body>
+
 </html>

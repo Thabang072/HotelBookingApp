@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hotels | StayEase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        StayEase
+    </a>
+
+    <nav>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="hotels.html">Hotels</a>
+            </li>
+
+            <li>
+                <a href="favorites.html">
+                    Favorites ❤️
+                </a>
+            </li>
+
+            <li>
+                <a href="my-bookings.html">
+                    My Bookings
+                </a>
+            </li>
+
+            <li id="loginNav">
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+
+            <li id="registerNav">
+                <a
+                    href="register.html"
+                    class="nav-button"
+                >
+                    Register
+                </a>
+            </li>
+
+            <li
+                id="userNav"
+                class="user-nav"
+            ></li>
+
+            <li id="logoutNav"></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-header">
+
+        <h1>
+            Find Your Hotel
+        </h1>
+
+        <p>
+            Browse our available hotels.
+        </p>
+
+    </section>
+
+
+    <section class="hotel-search">
+
+        <input
+            type="text"
+            id="hotelSearch"
+            placeholder="Search hotels or locations..."
+        >
+
+
+        <select id="priceFilter">
+
+            <option value="all">
+                All Prices
+            </option>
+
+            <option value="1000">
+                Under R1,000
+            </option>
+
+            <option value="1500">
+                Under R1,500
+            </option>
+
+            <option value="2000">
+                Under R2,000
+            </option>
+
+            <option value="3000">
+                Under R3,000
+            </option>
+
+        </select>
+
+
+        <select id="ratingFilter">
+
+            <option value="all">
+                All Ratings
+            </option>
+
+            <option value="5">
+                5 Stars
+            </option>
+
+            <option value="4">
+                4+ Stars
+            </option>
+
+            <option value="3">
+                3+ Stars
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <section>
+
+        <div
+            id="hotelList"
+            class="hotel-grid"
+        ></div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <p>
+        &copy; 2026 StayEase.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/hotels.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>

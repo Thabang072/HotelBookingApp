@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Book Hotel | StayEase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        StayEase
+    </a>
+
+    <nav>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="hotels.html">Hotels</a>
+            </li>
+
+            <li>
+                <a href="favorites.html">
+                    Favorites ❤️
+                </a>
+            </li>
+
+            <li>
+                <a href="my-bookings.html">
+                    My Bookings
+                </a>
+            </li>
+
+            <li id="loginNav">
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+
+            <li id="registerNav">
+                <a
+                    href="register.html"
+                    class="nav-button"
+                >
+                    Register
+                </a>
+            </li>
+
+            <li
+                id="userNav"
+                class="user-nav"
+            ></li>
+
+            <li id="logoutNav"></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="booking-section">
+
+        <h1>
+            Complete Your Booking
+        </h1>
+
+
+        <div id="bookingHotel"></div>
+
+
+        <form
+            id="bookingForm"
+            class="booking-form"
+        >
+
+            <label for="guestName">
+                Guest Name
+            </label>
+
+            <input
+                type="text"
+                id="guestName"
+                required
+            >
+
+
+            <label for="checkIn">
+                Check-in Date
+            </label>
+
+            <input
+                type="date"
+                id="checkIn"
+                required
+            >
+
+
+            <label for="checkOut">
+                Check-out Date
+            </label>
+
+            <input
+                type="date"
+                id="checkOut"
+                required
+            >
+
+
+            <label for="guests">
+                Number of Guests
+            </label>
+
+            <input
+                type="number"
+                id="guests"
+                min="1"
+                max="10"
+                value="1"
+                required
+            >
+
+
+            <label for="roomType">
+                Room Type
+            </label>
+
+            <select
+                id="roomType"
+                required
+            >
+
+                <option value="Standard">
+                    Standard Room
+                </option>
+
+                <option value="Deluxe">
+                    Deluxe Room
+                </option>
+
+                <option value="Suite">
+                    Suite
+                </option>
+
+            </select>
+
+
+            <div class="price-summary">
+
+                <p>
+                    Price per night:
+                    <strong id="nightlyPrice">
+                        R0
+                    </strong>
+                </p>
+
+                <p>
+                    Number of nights:
+                    <strong id="numberOfNights">
+                        0
+                    </strong>
+                </p>
+
+                <p>
+                    Room multiplier:
+                    <strong id="roomMultiplier">
+                        1x
+                    </strong>
+                </p>
+
+                <h2>
+                    Total:
+                    <span id="totalPrice">
+                        R0
+                    </span>
+                </h2>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="primary-button"
+            >
+                Confirm Booking
+            </button>
+
+
+            <p
+                id="bookingMessage"
+                class="form-message"
+            ></p>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <p>
+        &copy; 2026 StayEase.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/hotels.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/booking.js"></script>
+
+</body>
+
+</html>
